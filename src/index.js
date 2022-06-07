@@ -120,3 +120,12 @@ form.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
+
+
+var user = {
+    username: username,
+};
+
+var json = JSON.stringify(user);
+localStorage.setItem('username', json);
+console.log('username');
