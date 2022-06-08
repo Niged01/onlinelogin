@@ -10,7 +10,7 @@
       "128": "./assets/images/icons8-password-40.png"
   },
 
-  "page_action": {
+  "action": {
       "default_icon": {
         "16": "./assets/images/icons8-password-40.png",
         "48": "./assets/images/icons8-password-40.png",
