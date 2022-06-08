@@ -1,0 +1,36 @@
+{
+    "name": "Login",
+    "description": "Login Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+
+  "icons": {
+      "16": "./assets/images/icons8-password-40.png",
+      "48": "./assets/images/icons8-password-40.png",
+      "128": "./assets/images/icons8-password-40.png"
+  },
+
+  "page_action": {
+      "default_icon": {
+        "16": "./assets/images/icons8-password-40.png",
+        "48": "./assets/images/icons8-password-40.png",
+        "128": "./assets/images/icons8-password-40.png"
+      }
+  },
+
+  "content_scripts": [{
+      "matches": ["https://www.google.com/*"],
+      "css": ["./assets/style.css"],
+      "scripts": [
+          "src/index.js",
+          "src/popup.js",
+          "src/logout.js"
+        ],
+       "html": [
+           "src/index.html",
+           "src/popup.html",
+           "src/logout.html"
+       ]
+  }],
+
+}
